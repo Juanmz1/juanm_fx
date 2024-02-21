@@ -1,0 +1,68 @@
+body{
+    background-image: url('../website/images/B1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sect{
+    margin-top: 4rem;
+    color: bisque;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.img1{
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.im1{
+    width: 10rem;
+    height: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+}
+.img11{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 4rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.trade{
+    margin-top: 4rem;
+    color: bisque;
+    align-items: center;
+    text-align: center;
+}
+.foot{
+    margin-top: 2rem;
+    color: beige;
+    text-align: center; 
+}
+.navbar-brand{
+    font-size: 1.5rem;
+}
+
+.white-text {
+    color: white;
+}
+
+.red-text {
+    color: red;
+}
+.cont{
+    margin-top: 5rem;
+}
+.img4{
+    margin-top: 7rem;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sect2{
+    margin-top: 6rem;
+}
+

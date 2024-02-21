@@ -1,0 +1,19 @@
+{% extends 'base.html' %}{% load static %}
+{% block content %}
+<div class='c1'>
+            <div class='img1' style="margin-top: 9rem; color:white;">
+                <div>
+            <a href="" ><img class='img11' src="{% static '/website/images/4.jpeg' %}" alt="Cash App"></a>
+                    <h2>Cash App</h2>
+                </div>
+                <div>
+           <a href="{% url 'gift_card' %}"><img class='img11' src="{% static '/website/images/3.jpeg' %}" alt="Cash App"></a>
+                    <h2>Gift Card</h2>
+                </div>
+                <div>
+           <a href=""   ><img class='img11' src="{% static '/website/images/bit.jpg' %}" alt="Trade"></a>
+                    <h2>Trade</h2>
+                </div>
+            </div>
+    </div>
+{% endblock %}

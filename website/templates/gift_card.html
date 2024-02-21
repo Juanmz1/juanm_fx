@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="sect2" style="margin-top: 4rem; align-item: center; margin-left: 2rem; gap:2rem; margin-bottom: 2rem; justify-content:evenly-spaced;">
+    <div class="img4">
+        <a href="{% url 'gift_card_detail' %}"><img class='img11' src="{% static '/website/images/amazon.jpeg' %}"></a>
+        <a href=""><img class='img11' src="{% static '/website/images/american express.jpeg' %}"></a>
+        <a href=""><img class='img11' src="{% static '/website/images/app_itune.jpeg' %}"></a>
+        <a href=""><img class='img11' src="{% static '/website/images/ebay.jpeg' %}"></a>
+        <a href=""><img class='img11' src="{% static '/website/images/google pay.jpeg' %}"></a>
+        <a href=""><img class='img11' src="{% static '/website/images/mastercard.jpeg' %}"></a>
+
+    </div>
+    <div class="img4" style="margin-top: 4rem; gap: 3rem;">
+        <a href=""><img class='img11' src="{% static '/website/images/nordstrom.jpeg' %}"></a>
+        <a href=""><img class='img11' src="{% static '/website/images/razer gold.jpeg' %}"></a>
+        <a href=""><img class='img11' src="{% static '/website/images/sephora.jpeg' %}"></a>
+        <a href=""><img class='img11' src="{% static '/website/images/steam.jpeg' %}"></a>
+        <a href=""><img class='img11' src="{% static '/website/images/vinilla.jpeg' %}"></a>
+        <a href=""><img class='img11' src="{% static '/website/images/walmart.jpeg' %}"></a>
+    </div>
+</section>
+{% endblock %}

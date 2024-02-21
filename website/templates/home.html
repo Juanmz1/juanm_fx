@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class='sect'>
+      {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+      {% endif %}
+    <div class='c1'>
+            <div class='img1'>
+                <div>
+                    <img class='img11' src="{% static '/website/images/4.jpeg' %}" alt="Cash App">
+                    <h2>Cash App</h2>
+                </div>
+                <div>
+                     <img class='img11' src="{% static '/website/images/3.jpeg' %}" alt="Cash App">
+                    <h2>Gift Card</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='trade'>
+        <div>
+            <h3>We Handle All Cash App Tags</h3>
+            <h3>We Redeem All Gift Card</h3>
+        </div>
+        {% if user.is_authenticated %}
+        <div>
+            <h3>Live Trading Section With Top Experts</h3>
+            <a href="{% url 'starter' %}"><button class='btn btn-outline-success'>Get Started</button></a>
+        </div>
+        {% else %}
+        <div>
+            <h3>Live Trading Section With Top Experts</h3>
+            <a href="{% url 'register' %}"><button class='btn btn-outline-success'>Get Started</button></a>
+        </div>
+        {% endif %}
+    </section>
+    <footer class="foot">
+        <p>Copyright@ 2024 JuanmFx All Rights Reserved</p>
+    </footer>
+{% endblock %}
